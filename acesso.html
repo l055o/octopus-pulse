@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso Exclusivo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@1,400;1,700&display=swap');
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            max-width: 400px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .logo img {
+            max-width: 250px; /* Aumentei um pouco o tamanho máximo para sua logo se destacar */
+            height: auto;
+            margin-bottom: 40px;
+        }
+        .access-form {
+            width: 100%;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .input-group label {
+            display: none;
+        }
+        .input-group input {
+            background-color: transparent;
+            border: 1px solid #444;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            padding: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        .input-group input:focus {
+            border-color: #888;
+        }
+        .btn {
+            background-color: #1a1a1a;
+            border: 1px solid #444;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            padding: 15px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #2a2a2a;
+            border-color: #888;
+        }
+        .footer {
+            position: fixed;
+            bottom: 30px;
+            width: 100%;
+            text-align: center;
+        }
+        .footer p {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #ff3333;
+            font-size: 1.2em;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="http://googleusercontent.com/file_content/0" alt="Octopus Cove Logo">
+        </div>
+        <div class="access-form">
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="access-key">Chave de Acesso</label>
+                    <input type="text" id="access-key" name="access-key" placeholder="Chave de Acesso" required>
+                </div>
+                <button type="submit" class="btn">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Um lugar somente seu, onde você estiver</p>
+    </div>
+
+</body>
+</html>
